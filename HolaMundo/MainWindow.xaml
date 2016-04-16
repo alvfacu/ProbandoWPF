@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HolaMundo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Hola Mundo" Height="350" Width="525" Foreground="Black">
     <Grid>
-        
+        <Button x:Name="btnApretame" Content="Apretame" HorizontalAlignment="Left" Margin="138,14,0,0" VerticalAlignment="Top" Width="75" IsCancel="True" ToolTip="Apretame" Click="btnApretame_Click"/>
+        <Label x:Name="lblTexto" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="106"/>
+        <Button x:Name="btnBD" Content="GetAll()" HorizontalAlignment="Left" Margin="234,14,0,0" VerticalAlignment="Top" Width="75" Click="btnBD_Click"/>
+        <DataGrid x:Name="dg_bd" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top" Width="497" Height="180"/>
+
     </Grid>
 </Window>
